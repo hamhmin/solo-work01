@@ -1,0 +1,40 @@
+/* web font - noto sans kr */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
+
+:root{
+    --main-color:#333;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #333;
+  }
+  
+  li, ol, ul {
+    list-style-type: none;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  table {
+    border-collapse:collapse;
+    border-spacing: 0;
+  }
+  
+  button:hover {
+    cursor: pointer;
+  }
+
+
+  i {
+    font-size: 48px;
+  }

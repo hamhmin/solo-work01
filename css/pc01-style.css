@@ -1,0 +1,65 @@
+@import url('./reset.css');
+
+body{
+    background: pink;
+}
+
+#home{
+    width: 100vw;
+    position: relative;
+}
+#main-header{
+    width: 100vw;
+    height: 80px;
+    background: transparent;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    left: 0;
+    padding: 16px 64px;
+}
+#main-header .pc-nav{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+height: 100%;
+font-weight: 300;
+}
+#main-header .pc-nav > ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#main-header .pc-nav ul > li{
+    margin-left: 44px;
+}
+#main-header .pc-nav ul li.lang-box{
+    outline: 1px solid #aaa;
+    padding: 10px 20px;
+    font-weight: 400;
+    position: relative;
+}
+#main-header .pc-nav ul li.lang-box ul{
+position: absolute;
+transform: translateY(100%);
+bottom: 0;
+left: 0;
+background: #fff;
+outline: 1px solid #aaa;
+display: none;
+}
+#main-header .pc-nav ul li.lang-box ul li{
+    margin-left: 0;
+    padding: 10px 53px 10px 20px;
+    font-weight: 300;
+    font-size: 13px;
+}
+#main-header .pc-nav ul li.lang-box ul li.lang-on{
+    font-weight: 400;
+}
+.mobile-nav, .gnb-btn{
+    display: none;
+}
