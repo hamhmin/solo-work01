@@ -1,7 +1,6 @@
 @import url('./reset.css');
 
 body{
-    background: blue;
 }
 
 #home{
@@ -20,6 +19,13 @@ body{
     left: 0;
     padding: 16px 28px;
     background: #fff;
+    z-index: 100;
+}
+#main-header ul li{
+    transition: 0.5s;
+}
+#main-header ul li:hover{
+    color:#666;
 }
 #main-header .gnb-btn{
     display: flex;
@@ -29,7 +35,7 @@ body{
 }
 /* #main-header .mobile-nav */
 .mobile-nav{
-    /* display: none; */
+    display: none;
     position: fixed;
     top:0;
     left: 0;
@@ -111,4 +117,165 @@ background-color: #fff;
 .pc-nav{
     display: none;
     outline: 50px solid red;
+}
+
+/* main-visual */
+#main-visual{
+    width: 100vw;
+    height: 100vh;
+    background: #333;
+    overflow: hidden;
+}
+#main-visual .fade-banner #fadeImg{
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+#main-visual article{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    width: 100%;
+    height: 50%;
+    top: 12%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#main-visual article p{
+    font-size: 36px;
+    font-weight: 300;
+    letter-spacing: 3px;
+    line-height: 55px;
+    color: #fff;
+    text-shadow: 0 0 8px #333;
+    margin-left: 12vw;
+    transition-duration: 0.5s;
+}
+#main-visual article p:hover{
+   color: #333;
+}
+#main-visual article .about-btn{
+    border: 0;
+    background: #fff;
+    width: 200px;
+    height: 100px;
+    padding: 10px 20px;
+    margin-bottom: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: left;
+    transition-duration: 0.5s;
+}
+#main-visual article .about-btn:hover{
+    width: 370px;
+    background: linear-gradient(to right, #333, #666);
+    color: #fff;
+    transition-duration: 2s;
+}
+#main-visual article .about-btn .bi{
+    font-size: 20px;
+    color:inherit;
+    animation-name: about;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes about {
+    0%{
+        margin-left: 0;
+    }
+    100%{
+        margin-left: 20px;
+    }
+    
+}
+
+#section01{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+    margin: 0 12vw;
+    margin-top: 80px;
+}
+#section01 h3{
+    font-weight: 400;
+    font-size: 18px;
+    width: 50%;
+    padding-bottom: 4px;
+    border-bottom: 1px solid #aaa;
+}
+#section01 .article-box{
+display: flex;
+flex-direction: row;
+gap: 40px;
+}
+#section01 .article-box article h4{
+    font-size: 23px;
+    font-weight: 400;
+}
+#section01 .article-box article p{
+font-size: 14px;
+line-height: 25px;
+margin: 20px 0;
+}
+#section01 .article-box article button{
+    font-size: 14px;
+    font-weight: 300;
+    padding: 5px 30px;
+    background: #333;
+    color: #fff;
+}
+
+
+/* footer */
+
+footer{
+    width: 100%;
+    height: 260px;
+    padding: 0 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    border-top: 1px solid #333;
+    color: #999;
+    /* footer section gap */
+    margin-top: 40px;
+}
+footer .article-box{
+display: flex;
+flex-direction: column;
+justify-content: center;
+gap: 10px;
+}
+footer .article-box article{
+    line-height: 25px;
+}
+footer .article-box article h3{
+    color: #666;
+    font-size: 16px;
+}
+footer .article-box article p{
+    color: #666;
+    font-size: 14px;
+}
+footer .email{
+    transition: 0.5s;
+}
+footer .email:hover{
+    color: #333;
+}
+footer .sns .bi{
+    color: #666;
+    font-size: 24px;
+    margin-right: 30px;
+}
+footer .sns{
+    margin-top: 30px;
 }

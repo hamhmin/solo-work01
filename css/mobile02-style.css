@@ -1,5 +1,104 @@
 @import url('./reset.css');
 
-body{
-    background: green;
+
+
+#main-visual article{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    height: 50%;
+    top: 28%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#main-visual article p{
+    font-size: 32px;
+    font-weight: 300;
+    letter-spacing: 3px;
+    line-height: 45px;
+    color: #fff;
+    text-shadow: 0 0 8px #333;
+    margin-left: 12vw;
+    transition-duration: 0.5s;
+}
+#main-visual article p:hover{
+   color: #333;
+}
+#main-visual article .about-btn{
+    border: 0;
+    background: #fff;
+    width: 80px;
+    height: 160px;
+    padding: 10px 20px;
+    margin-bottom: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: left;
+    transition-duration: 0.5s;
+}
+#main-visual article .about-btn:hover{
+    width: 100px;
+    background: linear-gradient(to right, #333, #666);
+    color: #fff;
+    transition-duration: 2s;
+}
+#main-visual article .about-btn .bi{
+    font-size: 16px;
+    color:inherit;
+    animation-name: about;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes about {
+    0%{
+        margin-left: 0;
+    }
+    100%{
+        margin-left: 20px;
+    }
+    
+}
+
+
+#section01{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+    margin: 0 12vw;
+    margin-top: 80px;
+}
+#section01 h3{
+    font-weight: 400;
+    font-size: 18px;
+    width: 100%;
+    padding-bottom: 4px;
+    border-bottom: 1px solid #aaa;
+}
+#section01 .article-box{
+display: flex;
+flex-direction: column;
+gap: 40px;
+}
+#section01 .article-box article h4{
+    font-size: 23px;
+    font-weight: 400;
+}
+#section01 .article-box article p{
+font-size: 14px;
+line-height: 25px;
+margin: 20px 0;
+}
+#section01 .article-box article button{
+    font-size: 14px;
+    font-weight: 300;
+    padding: 5px 30px;
+    background: #333;
+    color: #fff;
 }

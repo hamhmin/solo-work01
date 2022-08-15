@@ -4,7 +4,12 @@
 :root{
     --main-color:#333;
 }
-
+body{
+  -ms-overflow-style: none;
+  }
+ ::-webkit-scrollbar {
+   display: none;
+ }
 html {
     scroll-behavior: smooth;
 }
@@ -29,7 +34,9 @@ html {
     border-collapse:collapse;
     border-spacing: 0;
   }
-  
+  button{
+    border: 0;
+  }
   button:hover {
     cursor: pointer;
   }

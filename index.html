@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>클론 생성</title>
     <!-- pc01 02 , mobile.css -->
-    <link rel="stylesheet" href="css/pc01-style.css" media="screen and (min-width : 1100px)">
-    <link rel="stylesheet" href="css/mobile01-style.css" media="screen and (max-width : 1099px)">
+    <link rel="stylesheet" href="css/pc01-style.css" media="screen and (min-width : 1000px)">
+    <link rel="stylesheet" href="css/mobile01-style.css" media="screen and (max-width : 999px)">
     <link rel="stylesheet" href="css/mobile02-style.css" media="screen and (max-width : 767px)">
     <!-- jquery cdn -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -20,12 +20,14 @@
     <!-- #warp -->
     <div id="wrap">
         <header id="main-header">
+            
             <div class="logo">
                 <a href="./">
                 <img src="images/logo.png" alt="logo">
             </a>
             </div>
             <nav class="pc-nav">
+                <div class="header-slide"></div>
                 <ul>
                     <li>ABOUT</li>
                     <li>HISTORY</li>
@@ -66,6 +68,71 @@
                 </ul>
             </nav>
         </header>
+        <main id="main-visual">
+            <div class="fade-banner">
+            <img id="fadeImg" src="images/banner01.jpg" alt="banner">
+            <img id="fadeImg" src="images/banner02.jpg" alt="banner">
+            <img id="fadeImg" src="images/banner03.jpg" alt="banner">
+            </div>
+            <article>
+                <p>Tonight's <br>dinner is <br>kimchi stew</p>
+                <button class="about-btn">about
+                    <i class="bi bi-chevron-double-right"></i>
+                </button>
+            </article>
+        </main>
+        <section id="section01">
+            <h3>MEDIA RREPORT</h3>
+            <div class="article-box">
+            <article>
+            <h4>내일 학원간다.. 오늘은 몇명이 오려나..</h4>
+            <p>‘반려동물과 함께하다’라는 의미를 담은 반함은
+                 고양이 사료명을 검색하거나 성분 분석을 의뢰
+                 하면 관련 분석 정보를 제공하는 서비스다. 반
+                 함은 반려동물 신체적, 영양학 특성을 중심으
+                 로 성분 분석 서비스를 제공한다. 예를 들어 
+                 옥수수는 사람에게 훌륭한 영양 공급원이지만, 
+                 반함의 분석 정보에 따르면 ‘반려견의 경우 과민 증세나 
+                 알러지 성분 반응을 보일 수 있어 일부 수의사나 영양사는 
+                 옥수수 기반 식단을 피하도록 권유한다’라고 소개한다. 
+                 현재 반함에 등록된 성분 분석 사료 수는 1000여개에 달한다.</p>
+                 <a href=""><button>MORE</button></a>
+        </article>
+        <article>
+            <h4>내일 학원간다.. 오늘은 몇명이 오려나..</h4>
+            <p>‘반려동물과 함께하다’라는 의미를 담은 반함은
+                 고양이 사료명을 검색하거나 성분 분석을 의뢰
+                 하면 관련 분석 정보를 제공하는 서비스다. 반
+                 함은 반려동물 신체적, 영양학 특성을 중심으
+                 로 성분 분석 서비스를 제공한다. 예를 들어 
+                 옥수수는 사람에게 훌륭한 영양 공급원이지만, 
+                 반함의 분석 정보에 따르면 ‘반려견의 경우 과민 증세나 
+                 알러지 성분 반응을 보일 수 있어 일부 수의사나 영양사는 
+                 옥수수 기반 식단을 피하도록 권유한다’라고 소개한다. 
+                 현재 반함에 등록된 성분 분석 사료 수는 1000여개에 달한다.</p>
+                 <a href=""><button>MORE</button></a>
+        </article>
+    </div>
+        </section>
+        <footer>
+            <div class="article-box">
+            <article>
+                <h3>에이티 주식회사</h3>
+                <p>Copyright © 2022 empathy with.</p>
+            </article>
+            <article>
+                <p class="email">hamhmin7@naver.com</p>
+                <p>경기도 김포시 북변동 산호아파트는 우리집</p>
+                <p>Tel. 031-998-2855</p>
+            </article>
+        </div>
+            <div class="sns">
+                <i class="bi bi-instagram"></i>
+                <i class="bi bi-facebook"></i>
+                <i class="bi bi-youtube"></i>
+            
+        </div>
+        </footer>
     </div>
 </body>
 </html>
