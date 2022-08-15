@@ -210,7 +210,7 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-top: 1px solid #333;
+    border-top: 1px solid #aaa;
     color: #999;
     /* footer section gap */
     margin-top: 40px;
