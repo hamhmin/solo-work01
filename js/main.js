@@ -19,19 +19,19 @@ $(function(){
         let next = (current + 1) % 3;
 
         $('.fade-banner').find('img').eq(current).fadeOut(0);
-        $('.fade-banner').find('img').eq(next).fadeIn(400);
+        $('.fade-banner').find('img').eq(next).fadeIn(800);
         console.log(current, next);
         current = next;
-        },3000);
+        },5000);
 
         $(function(){
             $(window).scroll(function(){
                 let scrollPosition = $(window).scrollTop();
                 console.log(scrollPosition);
                 if( scrollPosition >= 100 ){
-                   $('.header-slide').stop().fadeIn(300);
+                   $('.header-slide').stop().slideDown(500);
                 } else {
-                    $('.header-slide').stop().fadeOut(300);
+                    $('.header-slide').stop().slideUp(500);
                 }
             });
         });
