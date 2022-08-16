@@ -1,7 +1,11 @@
 @import url('./reset.css');
 
-
-
+.mobile-nav{
+    background: #fff;
+}
+.mobile-nav #gnb-header{
+    background: #fff;
+}
 #main-visual article{
     position: absolute;
     display: flex;

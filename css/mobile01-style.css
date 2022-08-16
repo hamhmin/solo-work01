@@ -123,7 +123,7 @@ background-color: #fff;
 #main-visual{
     width: 100vw;
     height: 100vh;
-    background: #333;
+    background: #fff;
     overflow: hidden;
 }
 #main-visual .fade-banner #fadeImg{
