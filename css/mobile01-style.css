@@ -116,7 +116,6 @@ background-color: #fff;
 
 .pc-nav{
     display: none;
-    outline: 50px solid red;
 }
 
 /* main-visual */
@@ -140,7 +139,7 @@ background-color: #fff;
     align-items: end;
     width: 100%;
     height: 50%;
-    top: 12%;
+    top: -7%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -230,8 +229,92 @@ margin: 20px 0;
     padding: 5px 30px;
     background: #333;
     color: #fff;
+    transition-duration:0.6s;
+}
+/* 섹션 버튼 호버 효과 */
+#section01 .article-box article button:hover{
+    opacity: 0.8;
 }
 
+/* 섹션 부제목 호버 효과  */
+.article-box article h4{
+    transition-duration: 0.6s;
+}
+.article-box article h4:hover{
+    opacity: 0.7;
+}
+
+
+/* section02 */
+#section02{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 12vw;
+    margin-top: 40px;
+    gap: 40px;
+}
+#section02 h3{
+    font-weight: 400;
+    font-size: 18px;
+    width: max-content;
+    border-bottom: 1px solid #aaa;
+    padding-bottom: 4px;
+}
+#section02 .article-box{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+gap: 2vw;
+}
+#section02 .article-box article{
+    width: 23vw;
+    display: flex;
+    flex-direction: column;
+}
+#section02 .article-box article h4{
+    font-size: 23px;
+    font-weight: 400;
+}
+#section02 .article-box article p{
+font-size: 14px;
+line-height: 25px;
+margin: 20px 0;
+}
+#section02 .article-box img{
+    width: 23vw;
+    height: 23vw;
+    object-fit: cover;
+    margin-bottom: 20px;
+    transition-duration: 0.5s;
+    outline: 1px solid #ccc;
+}
+#section02 .article-box img:hover{
+    opacity: 0.7;
+    object-position: -20px;
+}
+
+/* #section03 */
+#section03{
+    margin-top: 20px;
+    width: 100vw;
+    height: 100vh;
+    background: url(../images/bg01.jpg);
+    background-position:center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+#section03::before{
+content: "";
+opacity: 0.7;
+position: absolute;
+top: 0px;
+left: 0px;
+right: 0px;
+bottom: 0px;
+background-color: #ccc;
+}
 
 /* footer */
 
@@ -246,7 +329,6 @@ footer{
     border-top: 1px solid #aaa;
     color: #999;
     /* footer section gap */
-    margin-top: 40px;
 }
 footer .article-box{
 display: flex;

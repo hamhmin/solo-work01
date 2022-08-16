@@ -18,7 +18,7 @@ $(function(){
         setInterval(function(){
         let next = (current + 1) % 3;
 
-        $('.fade-banner').find('img').eq(current).fadeOut(200);
+        $('.fade-banner').find('img').eq(current).fadeOut(0);
         $('.fade-banner').find('img').eq(next).fadeIn(400);
         console.log(current, next);
         current = next;
