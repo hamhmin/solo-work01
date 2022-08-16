@@ -140,7 +140,7 @@ display: none;
 }
 #main-visual article .about-btn:hover{
     width: 600px;
-    background: linear-gradient(to right, #333, #666);
+    background: linear-gradient(to right, #aaa, #fff);
     color: #fff;
     transition-duration: 2s;
 }
@@ -272,23 +272,48 @@ margin: 20px 0;
     background-size: cover;
     background-attachment: fixed;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 #section03::before{
 content: "";
-opacity: 0.7;
+opacity: 0.5;
 position: absolute;
 top: 0px;
 left: 0px;
 right: 0px;
 bottom: 0px;
-background-color: #ccc;
+background-color: #000;
 }
-#section03 h1{
-    font-size: 50px;
+#section03 h3,
+#section03 p{
+    position: relative;
+    color: #fff;
+}
+#section03 h3{
+    font-size: 20px;
+    font-weight: 300;
+}
+#section03 h3::before{
+    display: block;
+    content: "";
+    width: 30px;
+    border-bottom: 1px solid #fff;
     position: absolute;
-    top: 50%;
+    bottom: -20px;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%);
+}
+#section03 p{
+    font-weight: 300;
+    margin-top: 40px;
+    width: 250px;
+    font-size: 16px;
+    word-break: keep-all;
+    line-height: 30px;
+    text-align: center;
 }
 
 
@@ -313,21 +338,28 @@ justify-content: center;
 gap: 30px;
 }
 footer .article-box article h3{
-    color: #666;
+    color: #888;
     font-size: 18px;
+    font-weight: 500;
 }
 footer .article-box article p{
     font-size: 14px;
-    color: #666;
+    color: #999;
 }
-footer .email{
+footer .email,
+footer .article-box article p:hover,
+footer .article-box article h3,
+footer .sns .bi:hover{
     transition: 0.5s;
 }
-footer .email:hover{
+footer .email,
+footer .article-box article p:hover,
+footer .article-box article h3:hover,
+footer .sns .bi:hover{
     color: #333;
 }
 footer .sns .bi{
-    color: #666;
+    color: #999;
     font-size: 24px;
     margin-left: 20px;
 }

@@ -46,7 +46,7 @@
 }
 #main-visual article .about-btn:hover{
     width: 100px;
-    background: linear-gradient(to right, #333, #666);
+    background: linear-gradient(to right, #aaa, #fff);
     color: #fff;
     transition-duration: 2s;
 }
