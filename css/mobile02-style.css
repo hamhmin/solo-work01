@@ -168,3 +168,42 @@ margin: 20px 0;
 
 
 
+/* #section04 */
+
+#section04{
+    margin-top: 30px;
+    width: 100vw;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background: #000;
+}
+#section04 iframe{
+    position: absolute;
+    opacity: 0.3;
+    top: 0;
+    right: 0;
+}
+#section04 article{
+    z-index: 10;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+#section04 h1{
+    color: #fff;
+    font-size: 24px;
+    font-weight: 300;
+    text-shadow: 0 0 5px #000;
+}
+#section04 img{
+    width: 50px;
+    height: 50px;
+    background-image: radial-gradient(#666, transparent 70%);
+}
