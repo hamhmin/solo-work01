@@ -4,7 +4,7 @@
 :root{
     --main-color:#333;
 }
-body{
+*{
   -ms-overflow-style: none;
   }
  ::-webkit-scrollbar {

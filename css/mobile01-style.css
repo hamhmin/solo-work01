@@ -297,9 +297,9 @@ margin: 20px 0;
 #section03{
     margin-top: 30px;
     width: 100vw;
-    height: 100vh;
+    height: 30vh;
     background: url(../images/bg01.jpg);
-    background-position:center;
+    background-position: center;
     background-size: cover;
     background-attachment: fixed;
     position: relative;
@@ -347,6 +347,18 @@ background-color: #000;
     word-break: keep-all;
     line-height: 30px;
     text-align: center;
+}
+
+
+
+/* #section04 */
+
+#section04{
+    width: 100vw;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 

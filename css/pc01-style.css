@@ -265,10 +265,11 @@ margin: 20px 0;
 
 #section03{
     margin-top: 30px;
+    margin-bottom: 30px;
     width: 100vw;
-    height: 100vh;
+    height: 30vh;
     background: url(../images/bg01.jpg);
-    background-position:center;
+    background-position: center;
     background-size: cover;
     background-attachment: fixed;
     position: relative;
@@ -315,6 +316,48 @@ background-color: #000;
     line-height: 30px;
     text-align: center;
 }
+
+/* #section04 */
+
+#section04{
+    width: 100vw;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background: #000;
+}
+#section04 iframe{
+    position: absolute;
+    opacity: 0.2;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+#section04 article{
+    z-index: 10;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+#section04 h1{
+    color: #fff;
+    font-size: 24px;
+    font-weight: 300;
+    text-shadow: 0 0 5px #000;
+}
+#section04 img{
+    width: 50px;
+    height: 50px;
+    background-image: radial-gradient(#666, transparent 70%);
+}
+
+
 
 
 
