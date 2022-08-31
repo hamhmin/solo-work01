@@ -181,12 +181,21 @@ margin: 20px 0;
     position: relative;
     background: #000;
 }
+#section04 .iframe-box{
+    overflow: hidden;
+
+}
 #section04 iframe{
     position: absolute;
+
     opacity: 0.3;
-    top: 0;
-    right: 0;
+    top: 50%;
+    left: 50%;
+    width: 200%;
+    height:100%;
+    transform: translate(-50%,-50%) scale(0.7);
 }
+
 #section04 article{
     z-index: 10;
     position: relative;
@@ -205,5 +214,5 @@ margin: 20px 0;
 #section04 img{
     width: 50px;
     height: 50px;
-    background-image: radial-gradient(#666, transparent 70%);
+    background-image: radial-gradient(#000, transparent 70%);
 }
