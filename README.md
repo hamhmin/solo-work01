@@ -13,10 +13,12 @@ https://hamhmin.github.io/solo-work01/
 3. main visual 영역 fade 효과, main visual 포함된 요소 hover 이벤트 적용
 4. media query 와 flex layout 활용
 5. 헤더 fixed, 헤더 스크롤 이벤트 적용
+6. fabicon, 사이트 썸네일 추가
 7. smooth page scroll
     - scroll-behavior: smooth
 8.  배너 이미지 스크롤 고정
     - background-attachment: fixed;
+9. iframe을 사용하여 퍼블리싱한 디지털 시계 삽입
 
 ## 라이브러리
 - 제이쿼리
