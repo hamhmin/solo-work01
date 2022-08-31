@@ -25,3 +25,4 @@ https://hamhmin.github.io/solo-work01/
 - Bootstrap 아이콘
 
 # 대표사진
+![screenshot](https://user-images.githubusercontent.com/49775311/187574253-2f6e8b2e-71e9-4d83-a5d3-932e0660d6eb.JPG)
