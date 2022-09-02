@@ -45,6 +45,6 @@ html {
     font-size: 48px;
   }
 body{
-    overflow:hidden;
+    overflow-x:hidden;
     width:100vw;
 }
