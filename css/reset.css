@@ -44,3 +44,7 @@ html {
   i {
     font-size: 48px;
   }
+body{
+    overflow:hidden;
+    width:100vw;
+}
