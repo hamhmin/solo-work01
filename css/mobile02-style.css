@@ -180,6 +180,7 @@ margin: 20px 0;
     align-items: center;
     position: relative;
     background: #000;
+    overflow:hidden;
 }
 #section04 .iframe-box{
     overflow: hidden;
